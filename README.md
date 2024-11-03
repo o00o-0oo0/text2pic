@@ -1,14 +1,7 @@
 
-## A simple demo of Cloudflare Pages Functions
+## Text to picture
 
-```
-yarn run wrangler pages dev src
-``` 
+Cloudflare pages with functions.  
+Environment args `ACCOUNT_ID` and `API_BEAR_TOKEN` should be set.
 
-### Details
 
-First it's a Cloudflare Pages project, see also the [Pages documentation](https://developers.cloudflare.com/pages/).
-
-Then add [Funtions](https://developers.cloudflare.com/pages/functions/) to it.
-
-Also enable [TypeScript for Pages Functions](https://developers.cloudflare.com/pages/functions/typescript/).
