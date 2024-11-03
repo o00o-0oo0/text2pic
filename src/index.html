@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <div id="inject"></div>
+  <div id="errors"></div>
+  <script type="module">
+    try {
+      const response = await fetch('/api/helloworld');
+      document.getElementById('inject').innerText = await response.text();
+    } catch (e) {
+      document.getElementById('errors').innerText = new Error(e).message;
+    }
+  </script>
+</body>
+</html>
